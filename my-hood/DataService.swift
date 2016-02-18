@@ -56,7 +56,7 @@ class DataService {
     }
     
     func documentPathForFileName(name: String) -> String {
-        let paths = NSSearchPathForDirectoriesInDomains(.DocumentationDirectory, .UserDomainMask, true)
+        let paths = NSSearchPathForDirectoriesInDomains(.DocumentDirectory, .UserDomainMask, true)
         let fullPath = paths[0] as NSString
         return fullPath.stringByAppendingPathComponent(name)
     }
