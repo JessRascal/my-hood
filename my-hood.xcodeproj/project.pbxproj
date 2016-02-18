@@ -12,6 +12,10 @@
 		C8AAB26E1C7633CE00376ED0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AAB26C1C7633CE00376ED0 /* Main.storyboard */; };
 		C8AAB2701C7633CE00376ED0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8AAB26F1C7633CE00376ED0 /* Assets.xcassets */; };
 		C8AAB2731C7633CE00376ED0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8AAB2711C7633CE00376ED0 /* LaunchScreen.storyboard */; };
+		C8AAB27C1C76343C00376ED0 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AAB27B1C76343C00376ED0 /* Post.swift */; };
+		C8AAB27F1C763CF300376ED0 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AAB27E1C763CF300376ED0 /* PostCell.swift */; };
+		C8AAB2821C7650D900376ED0 /* AddPostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AAB2811C7650D900376ED0 /* AddPostVC.swift */; };
+		C8AAB2861C765C4000376ED0 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8AAB2851C765C4000376ED0 /* DataService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		C8AAB26F1C7633CE00376ED0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C8AAB2721C7633CE00376ED0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C8AAB2741C7633CE00376ED0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C8AAB27B1C76343C00376ED0 /* Post.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		C8AAB27E1C763CF300376ED0 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
+		C8AAB2811C7650D900376ED0 /* AddPostVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPostVC.swift; sourceTree = "<group>"; };
+		C8AAB2851C765C4000376ED0 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +62,50 @@
 		C8AAB2671C7633CE00376ED0 /* my-hood */ = {
 			isa = PBXGroup;
 			children = (
+				C8AAB2841C765C2100376ED0 /* Services */,
+				C8AAB27A1C76342800376ED0 /* Model */,
+				C8AAB27D1C763CCD00376ED0 /* View */,
+				C8AAB2801C76509000376ED0 /* Controller */,
 				C8AAB2681C7633CE00376ED0 /* AppDelegate.swift */,
-				C8AAB26A1C7633CE00376ED0 /* ViewController.swift */,
-				C8AAB26C1C7633CE00376ED0 /* Main.storyboard */,
 				C8AAB26F1C7633CE00376ED0 /* Assets.xcassets */,
-				C8AAB2711C7633CE00376ED0 /* LaunchScreen.storyboard */,
 				C8AAB2741C7633CE00376ED0 /* Info.plist */,
 			);
 			path = "my-hood";
+			sourceTree = "<group>";
+		};
+		C8AAB27A1C76342800376ED0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C8AAB27B1C76343C00376ED0 /* Post.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C8AAB27D1C763CCD00376ED0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C8AAB2711C7633CE00376ED0 /* LaunchScreen.storyboard */,
+				C8AAB26C1C7633CE00376ED0 /* Main.storyboard */,
+				C8AAB27E1C763CF300376ED0 /* PostCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		C8AAB2801C76509000376ED0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C8AAB26A1C7633CE00376ED0 /* ViewController.swift */,
+				C8AAB2811C7650D900376ED0 /* AddPostVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		C8AAB2841C765C2100376ED0 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				C8AAB2851C765C4000376ED0 /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +179,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8AAB27C1C76343C00376ED0 /* Post.swift in Sources */,
 				C8AAB26B1C7633CE00376ED0 /* ViewController.swift in Sources */,
+				C8AAB2821C7650D900376ED0 /* AddPostVC.swift in Sources */,
+				C8AAB2861C765C4000376ED0 /* DataService.swift in Sources */,
 				C8AAB2691C7633CE00376ED0 /* AppDelegate.swift in Sources */,
+				C8AAB27F1C763CF300376ED0 /* PostCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
